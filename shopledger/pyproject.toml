@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shopledger"
+version = "0.1.0"
+description = "Inventory, sales and profit tracking for small shops - offline, no dependencies."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["inventory", "small business", "sales", "profit", "sqlite", "cli"]
+
+[project.scripts]
+shopledger = "shopledger.cli:main"
+
+[tool.setuptools]
+packages = ["shopledger"]
